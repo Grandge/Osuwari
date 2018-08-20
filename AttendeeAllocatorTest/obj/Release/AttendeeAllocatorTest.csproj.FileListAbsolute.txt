@@ -1,0 +1,2 @@
+C:\Users\smart\workspace\AtendeeAllocator\AttendeeAllocatorTest\obj\Release\AttendeeAllocatorTest.csprojAssemblyReference.cache
+C:\Users\smart\workspace\AtendeeAllocator\AttendeeAllocatorTest\obj\Release\AttendeeAllocatorTest.csproj.CoreCompileInputs.cache

@@ -1,0 +1,8 @@
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\bin\Debug\AtendeeAllocator.exe.config
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\bin\Debug\AtendeeAllocator.exe
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\bin\Debug\AtendeeAllocator.pdb
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.csprojResolveAssemblyReference.cache
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.Properties.Resources.resources
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.csproj.GenerateResource.Cache
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.exe
+C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.pdb

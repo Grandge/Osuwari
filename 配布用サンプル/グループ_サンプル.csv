@@ -1,0 +1,8 @@
+名称,排他,集合,分散,除外,優先度
+G女子,TRUE,TRUE,,,1
+G喫煙,TRUE,TRUE,,,2
+G個室希望,TRUE,,,,1
+G初参加,,,TRUE,,4
+G実行委員,,,TRUE,,3
+G宿泊なし,,TRUE,,TRUE,1
+G同室希望A,,TRUE,,,2

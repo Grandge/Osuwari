@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AttendeeAllocatorTest\Project1.nunit</TopNode>
+  <SelectedNode>[0-1000]C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AttendeeAllocatorTest\Project1.nunit</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AttendeeAllocatorTest\Project1.nunit" Expanded="true" />
+    <Node UniqueName="[0-1004]C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AttendeeAllocatorTest\bin\Debug\AttendeeAllocatorTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1005]AttendeeAllocatorTest" Expanded="true" />
+    <Node UniqueName="[0-1001]AttendeeAllocatorTest.ProjectClassTest" Expanded="true" />
+    <Node UniqueName="[0-1002]AttendeeAllocatorTest.ProjectClassTest.CsvReadTest" Expanded="true" />
+  </Nodes>
+</VisualState>

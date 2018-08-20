@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AttendeeAllocatorTest\bin\Debug\AttendeeAllocatorTest.exe" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-08-06" time="10:11:11">
+  <environment nunit-version="2.6.3.13283" clr-version="4.0.30319.18444" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AttendeeAllocatorTest\bin\Debug" machine-name="SHIBA-PC" user="shiba" user-domain="shiba-PC" />
+  <culture-info current-culture="ja-JP" current-uiculture="ja-JP" />
+  <test-suite type="Assembly" name="C:\Users\shiba\Documents\SWEST\レジストレーション委員会\自動部屋割り\AtendeeAllocator\AttendeeAllocatorTest\bin\Debug\AttendeeAllocatorTest.exe" executed="True" result="Success" success="True" time="2.363" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="AttendeeAllocatorTest" executed="True" result="Success" success="True" time="2.358" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="ProjectClassTest" executed="True" result="Success" success="True" time="2.358" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="CsvReadTest" executed="True" result="Success" success="True" time="2.354" asserts="0">
+                <results>
+                  <test-case name="AttendeeAllocatorTest.ProjectClassTest.CsvReadTest(&quot;..//..//testlist1.csv&quot;)" executed="True" result="Success" success="True" time="2.351" asserts="92" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

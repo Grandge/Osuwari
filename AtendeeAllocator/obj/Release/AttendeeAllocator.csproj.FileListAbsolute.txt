@@ -1,0 +1,14 @@
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\bin\Release\AtendeeAllocator.exe.config
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\bin\Release\AtendeeAllocator.exe.manifest
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\bin\Release\AtendeeAllocator.application
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\bin\Release\AtendeeAllocator.exe
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\bin\Release\AtendeeAllocator.pdb
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AttendeeAllocator.FormMain.resources
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AttendeeAllocator.Properties.Resources.resources
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AttendeeAllocator.csproj.GenerateResource.cache
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AttendeeAllocator.csproj.CoreCompileInputs.cache
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.TrustInfo.xml
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.exe.manifest
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.application
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.exe
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.pdb
