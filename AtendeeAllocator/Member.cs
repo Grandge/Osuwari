@@ -70,5 +70,30 @@ namespace AttendeeAllocator
             set { _exclude = value; }
         }
 
+        internal bool IsMember(Group g)
+        {
+            Group have = null;
+            try
+            {
+                have = _ListGroup.Where(c => c.Name == g.Name).First();
+
+            }catch(InvalidOperationException e)
+            {
+                ;
+            }
+            finally
+            {
+                ;
+            }
+            if (have != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }

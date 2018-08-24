@@ -12,3 +12,4 @@ C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAl
 C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.application
 C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.exe
 C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AtendeeAllocator.pdb
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Release\AttendeeAllocator.csprojAssemblyReference.cache

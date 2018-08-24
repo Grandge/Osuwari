@@ -40,3 +40,4 @@ C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllo
 C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.application
 C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.exe
 C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Debug\AtendeeAllocator.pdb
+C:\Users\smart\workspace\AtendeeAllocator\AtendeeAllocator\obj\Debug\AttendeeAllocator.csprojAssemblyReference.cache

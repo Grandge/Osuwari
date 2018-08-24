@@ -4,7 +4,7 @@
   <description asmv2:iconFile="osuwari.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="AtendeeAllocator" version="1.0.1.2" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="AtendeeAllocator" version="1.0.2.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="AtendeeAllocator.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AtendeeAllocator.exe" size="677376">
-      <assemblyIdentity name="AtendeeAllocator" version="1.0.1.2" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AtendeeAllocator.exe" size="678912">
+      <assemblyIdentity name="AtendeeAllocator" version="1.0.2.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VtjDwhrx/3KSLjbOxHYaTEwPPBhwAT7OPtIu+rozSJA=</dsig:DigestValue>
+        <dsig:DigestValue>BGI7G6aSZH7FU3Cyw11tHc4FDL/caFrFy+2ZRcp5rKM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -136,31 +136,19 @@ namespace AttendeeAllocator
             //割り当ての準備
             //=================================================
             //優先設定されている部屋のリストを作る
-            List<Compartment> listPriorityCompartment = new List<Compartment>();
-            foreach (Compartment cmp in listCompartment)
-            {
-                if (cmp.PriorityGroup == _groupName)
-                {
-                    listPriorityCompartment.Add(cmp);
-                }
-            }
+            List<Compartment> listPriorityCompartment = listCompartment.Where(c => c.PriorityGroup == _groupName).ToList();
+            listPriorityCompartment = listCompartment.Where(c => c.PriorityGroup == _groupName).ToList();
 
             //優先設定されていない部屋のリストを作る
-            List<Compartment> listNormalCompartment = new List<Compartment>();
-            foreach (Compartment cmp in listCompartment)
-            {
-                if (cmp.PriorityGroup == "")
-                {
-                    listNormalCompartment.Add(cmp);
-                }
-            }
+            List<Compartment> listNormalCompartment = listCompartment.Where(c => c.PriorityGroup == "").ToList();
 
             //割り当てなければいけないメンバーのリストを作成
-            List<Member> listRemainMembers = new List<Member>();
-            foreach (Member member in _members)
-            {
-                listRemainMembers.Add(member);
-            }
+            //List<Member> listRemainMembers = new List<Member>();
+            List<Member> listRemainMembers = _members.Where(m => m.IsAllocated != true).ToList();
+            //foreach (Member member in _members)
+            //{
+            //    listRemainMembers.Add(member);
+            //}
 
             int remainMemberCount = listRemainMembers.Count;
 
@@ -316,14 +304,14 @@ namespace AttendeeAllocator
                 if (mem.Exclude == false)
                 {
                     //割り当てられたメンバーが最小の区画を探す
-                    Compartment targetCompartment = FindFewestMemberAllocatedCompartmentFromList(listPriorityCompartment);
-                    if (targetCompartment != null)
+                    //Compartment targetCompartment = FindFewestMemberAllocatedCompartmentFromList(listPriorityCompartment);
+                    List<Compartment> remainSpaceRoomList = FindRemainSpaceCompartmentList(listPriorityCompartment);
+                    foreach( Compartment targetCompartment in remainSpaceRoomList)
                     {
-                        //探しだした区画に排他属性のグループのメンバーがいないか調べる
-                        if (targetCompartment.IsAlreadyAllocatedExclusiveGroupMenber(this) == false)
+                        if (mem.IsAllocated == false)
                         {
-                            //メンバーが（他のグループなどで）まだ割り当てられていないなら割り当てを試みる
-                            if (mem.IsAllocated == false)
+                            //探しだした区画に排他属性のグループのメンバーがいないか調べる
+                            if (targetCompartment.IsAlreadyAllocatedExclusiveGroupMenber(this,mem) == false)
                             {
                                 //メンバーを区画への割り当てを試みる
                                 if (targetCompartment.AllocateExclusiveMember(mem, this) == true)
@@ -331,8 +319,11 @@ namespace AttendeeAllocator
                                     mem.AllocatedCompartment = targetCompartment;
                                     continue;
                                 }
-
                             }
+                        }
+                        else
+                        {
+                            continue;
                         }
                     }
                 }
@@ -360,7 +351,7 @@ namespace AttendeeAllocator
                             continue;
                         }
                         //探しだした区画に排他属性のグループのメンバーがいないか調べる
-                        if (targetCompartment.IsAlreadyAllocatedExclusiveGroupMenber(this) == false)
+                        if (targetCompartment.IsAlreadyAllocatedExclusiveGroupMenber(this,mem) == false)
                         {
                             //メンバーを区画への割り当てを試みる
                             if (targetCompartment.AllocateExclusiveMember(mem, this) == true)
@@ -397,6 +388,17 @@ namespace AttendeeAllocator
             return result;
 
         }
+        /// <summary>
+        /// リストの中で空きのある部屋のリストを作る
+        /// </summary>
+        /// <param name="listCompartment"></param>
+        /// <returns></returns>
+        private List<Compartment> FindRemainSpaceCompartmentList(List<Compartment> listCompartment)
+        {
+            List<Compartment> result = listCompartment.Where(c => c.RemainSpace > 0).OrderByDescending(c => c.RemainSpace).ToList();
+            return result;
+
+        }
 
         /// <summary>
         /// 条件に最も近い区画をリストから探す
@@ -415,7 +417,7 @@ namespace AttendeeAllocator
                 if (cmp.RemainSpace == number)
                 {
                     //この区画に排他属性の他のグループのメンバーが割り当てられていないか確認
-                    if( cmp.IsAlreadyAllocatedExclusiveGroupMenber(this) == false)
+                    if( cmp.IsAlreadyAllocatedExclusiveGroupMenber(this,null) == false)
                     {
                         //そういう人は居なかった
                         return cmp;

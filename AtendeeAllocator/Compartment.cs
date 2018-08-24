@@ -90,7 +90,7 @@ namespace AttendeeAllocator
             if (_listMember.Count < _max)
             {
 
-                if (IsAlreadyAllocatedExclusiveGroupMenber(g) == false) {
+                if (IsAlreadyAllocatedExclusiveGroupMenber(g, member) == false) {
                     _listMember.Add(member);
                     result = true;
                 }
@@ -124,7 +124,7 @@ namespace AttendeeAllocator
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>
-        public bool IsAlreadyAllocatedExclusiveGroupMenber(Group group)
+        public bool IsAlreadyAllocatedExclusiveGroupMenber(Group group,Member m)
         {
             foreach (Member member in _listMember)
             {
@@ -136,7 +136,14 @@ namespace AttendeeAllocator
                         //違う排他属性グループがすでにいる
                         if ((g.Exclusive == true) || (g.Exclude == true))
                         {
-                            return true;
+                            if( m != null)
+                            {
+                                //割り当てようとしているメンバーが同じグループを持っているなら問題ない
+                                if (!m.IsMember(g))
+                                {
+                                    return true;
+                                }
+                            }
                         }
                     }
                 }

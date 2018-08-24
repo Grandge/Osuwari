@@ -55,10 +55,19 @@ namespace AttendeeAllocator
             string[] tmpRow = new string[max_x];
             string[] attInfoTitle = attInfo.Rows[0];
 
-            int topItems = FindTopItems(listCompartment);
-            for (int i = 0; i < topItems; i++)
+            //int topItems = FindTopItems(listCompartment);
+            List<Compartment> listTopCompartment = FindTopCompartment(listCompartment);
+            if(listTopCompartment.Count < 1)
             {
-                int curBaseX = (_listItem.Count + 1) * i;
+                //ERROR
+                return;
+            }
+            int topItems = listTopCompartment.Count;
+            foreach( Compartment c in listTopCompartment)
+//          for (int i = 0; i < topItems; i++)
+            {
+                //int curBaseX = (_listItem.Count + 1) * i;
+                int curBaseX = c.X;
                 tmpRow[curBaseX] = "区画名";
                 for (int j = 0; j < _listItem.Count; j++)
                 {
@@ -78,7 +87,7 @@ namespace AttendeeAllocator
             }
             _rows.Add(tmpRow);
 
-            //とりあえずからの行を作って埋める
+            //とりあえず空の行を作って埋める
             for (int i = 0; i < max_y; i++)
             {
                 tmpRow = new string[max_x];
@@ -118,6 +127,19 @@ namespace AttendeeAllocator
                 }
             }
             return result;
+        }
+        private List<Compartment> FindTopCompartment(List<Compartment> listCompartment)
+        {
+            List<Compartment> result = new List<Compartment>();
+            foreach (Compartment c in listCompartment)
+            {
+                if (c.Y == 0)
+                {
+                    result.Add(c);
+                }
+            }
+            return result;
+
         }
 
         private int FindItemFromAttendeeInfo(AttendeeInfo attInfo)
